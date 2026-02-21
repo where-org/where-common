@@ -1,0 +1,22 @@
+{
+  "name": "@where-org/where-common",
+  "version": "2.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Masafumi Sasahara <masafumi@sashara.io> (https://github.com/masafumi-sasahara/)",
+  "homepage": "https://where-org.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/where-org/where-common.git"
+  },
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "browser": {
+    "./lib/common/index.js": "./lib/common/index-browser.js",
+    "./lib/common/init/index.js": "./lib/common/init/index-browser.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
