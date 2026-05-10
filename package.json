@@ -1,7 +1,7 @@
 {
   "name": "@where-org/where-common",
   "version": "2.0.3",
-  "description": "",
+  "description": "Provides common functionality and utility commands for where-modules",
   "license": "MIT",
   "author": "Masafumi Sasahara <masafumi@sashara.io> (https://github.com/masafumi-sasahara/)",
   "homepage": "https://where-org.com/",
@@ -9,14 +9,23 @@
     "type": "git",
     "url": "git+https://github.com/where-org/where-common.git"
   },
+  "keywords": [
+    "where-common"
+  ],
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
+  "bin": {
+    "gen": "./bin/gen.js",
+    "hash": "./bin/hash.js"
+  },
   "browser": {
     "./lib/common/index.js": "./lib/common/index-browser.js",
     "./lib/common/init/index.js": "./lib/common/init/index-browser.js"
   },
   "dependencies": {
+    "argon2": "^0.44.0",
+    "bcrypt": "^6.0.0",
     "js-yaml": "^4.1.0"
   }
 }
